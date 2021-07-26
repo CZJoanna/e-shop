@@ -1,10 +1,12 @@
 import React from "react";
 
-export const MenuItem = ({ title, imageUrl, size }) => (
-  <div style={{ backgroundImage: `url(${imageUrl})` }} className={`${size} menu-item`}>
+export const MenuItem = ({ number , title, imageUrl, size }) => (
+  <div className={`menu-item menu-item--${number}`}>
+    <img src={imageUrl} alt="product" className="menu-item__img"/>
+
     <div className="content">
       <h1 className="title">{title}</h1>
-      <span className="subtitle">Hshop now</span>
+      <span className="subtitle">shop now</span>
     </div>
   </div>
 );
