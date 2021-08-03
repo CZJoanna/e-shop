@@ -1,12 +1,20 @@
 .homepage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 80px;
+  //already repeat
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(5rem, 1fr) [center-start] repeat(
+      12,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    )
+    [center-end]
+    minmax(5rem, 1fr) [full-end];
 }
 
 .directory-menu {
-  width: 80vw;
+  //already repeat
+  grid-column: center-start/center-end;
+  padding: 3rem 0;
+  //till above
   display: grid;
   grid-template-columns: repeat(6, [col-start]1fr[col-end]);
   grid-template-rows: 240px 320px;
