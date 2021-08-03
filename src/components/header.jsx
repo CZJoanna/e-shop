@@ -15,12 +15,12 @@ const Header = () => (
           </Link>
         </li>
         <li className="nav__item">
-          <Link href="" className="nav__link">
+          <Link to="#" className="nav__link">
             contact
           </Link>
         </li>
         <li className="nav__item">
-          <Link href="" className="nav__link">
+          <Link to="/signin" className="nav__link">
             sign in/up
           </Link>
         </li>

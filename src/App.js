@@ -4,6 +4,8 @@ import { HomePage } from "./pages/homepage";
 
 import ShopPage from "./pages/shop-page/shoppage";
 
+import SignInUpPage from "./pages/sign-inup";
+
 import Header from "./components/header";
 
 const HatsPage = () => {
@@ -22,6 +24,7 @@ function App() {
         <Route exact path="/" component={HomePage} />
         <Route path="/shop" component={ShopPage} />
         <Route path="/shop/hats" component={HatsPage} />
+        <Route path="/signin" component={SignInUpPage} />
       </Switch>
     </div>
   );

@@ -1,5 +1,13 @@
 @import "./base/base";
 @import "./base/typography";
-@import "./components/homepage";
+
+@import "./components/button";
 @import "./components/collection";
+@import "./components/form";
+@import "./components/menu";
+
 @import "./layout/header";
+
+@import "./pages/home-page";
+@import "./pages/shop-page";
+@import "./pages/sign-in-up-page";

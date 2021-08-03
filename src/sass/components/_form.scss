@@ -1,0 +1,51 @@
+$sub-color: grey;
+$main-color: black;
+
+@mixin shrinkLabel {
+  top: -1.5rem;
+  // left: -0.5rem;
+  font-size: 1.2rem;
+  color: $main-color;
+}
+
+.form {
+  &__group {
+    position: relative;
+    margin: 4.5rem 0;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    color: $sub-color;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $sub-color;
+    font-size: 18px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: $sub-color;
+    font-size: 1.6rem;
+    font-weight: normal;
+    pointer-events: none;
+    transition: 300ms ease all;
+  }
+
+  &__input:focus ~ &__label {
+    @include shrinkLabel();
+  }
+}
+
+.shrink {
+  @include shrinkLabel();
+}
