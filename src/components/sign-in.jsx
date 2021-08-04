@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./button";
+import { signInWithGoogle } from "../firebase/firebase.utils";
 
 class SignIn extends React.Component {
   constructor(props) {
@@ -77,7 +78,12 @@ class SignIn extends React.Component {
             </label>
           </div>
 
-          <Button type="submit">Sign In</Button>
+          <div className="sign-in__btns">
+            <Button type="submit">Sign In</Button>
+            <Button onClick={signInWithGoogle} isGoogle>
+              Sign In With Google
+            </Button>
+          </div>
         </form>
       </div>
     );

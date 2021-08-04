@@ -1,9 +1,14 @@
 .sign-in-up {
-  display: flex;
+  // display: flex;
   //到底寫在哪呢？～～～
   padding: 3rem 5rem;
 }
 
 .sign-in {
-  flex: 0 0 50%;
+  width: 50rem;
+
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+  }
 }
